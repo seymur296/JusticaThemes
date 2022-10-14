@@ -1,0 +1,677 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.header {
+    padding-top: 6px;
+    .header-top{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        .top-left {
+            width: 35%;
+            i {
+                padding-right: 15px;
+                color: #FFB400;
+                transition: 0.2s ease-in-out;
+                &:hover {
+                    color: white;
+                    cursor: pointer;
+                    transform: translateY(-5px);
+                }
+            }
+        }
+        .top-right {
+            display: flex;
+            justify-content:flex-end;
+            width: 65%;
+            P{
+                margin-left: 25px;
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+// HEADER TOP END
+
+#header {
+
+    .header-buttom {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        .pajax {
+            width: 25%;
+            img {
+                width: 60%;
+            }
+        }
+        .navbar-menu {
+            width: 50%;
+            ul{ 
+                padding-top: 8px;
+                display: flex;
+                justify-content: space-between;
+                li {
+                    list-style: none;
+                    color: white;
+                    font-size: 18px;
+                }
+            }
+        }
+        .laung {
+            width: 25%;
+            display: flex;
+            justify-content: flex-end;
+            span {
+                color: white;
+                font-size: 20px;
+                i {
+                    font-size: 25px;
+                    color: #FFB400;
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+// HEADER BUTTOM END
+
+
+.manage {
+    width: 100%;
+    height: 100vh;
+    padding-top: 180px;
+    h3 {
+     font-size: 19px;
+        color: #FFB400;
+        margin-bottom: 10px;
+    }
+    h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        padding-left: 25px;
+        color: white;
+        border-left: 4px solid#FFB400;
+    }
+    p {
+        color: white;
+        font-weight: bold;
+    }
+    .tax {
+        .elit {
+            width: 100%;
+            height: 100px;
+            button {
+                border: none;
+                background-color: #FFB400;
+                padding: 15px 45px;
+                margin-right: 15px;
+                transition: 0.2s ease-in-out;
+                font-weight: bold;
+                color: white;
+                &:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+
+.back-img {
+    background-image: url(https://www.designesia.com/themes/justica/images/background/5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// MANAGE END
+
+.practice {
+    width: 100%;
+    height: 348px;
+    .areas {
+        height: 347px;
+        background-color: #EAA636;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-size: 1.5rem;
+            color: white;
+        }
+    }
+    .labor {
+        height: 347px;
+        display: flex;        
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding:0 40px;
+        transition: 0.3s ease-in-out;
+        &:hover  {
+            background-color: #eaa5368e;
+            color: white;
+            cursor: pointer;
+            i,p{
+                color: white;
+            }
+
+        }
+        i {
+            font-size: 2.5rem;
+            color: #EAA636;
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+        p {
+            color: rgb(68, 67, 67);
+            margin-bottom: 20px;
+        }
+        button {
+          padding: 5px 20px;
+          border: none;
+          background-color: black;
+          color: white;
+          transition: 0.3s ease-in-out;
+          &:hover {
+              box-shadow: rgb(46, 43, 43) 0 0 10px;
+          }
+        }
+    }
+}
+
+// PRACTICE END
+
+
+.reputation {
+    width: 100%;
+    height: 415px;
+    background-color: #F2F2F2;
+    padding-top: 70px;
+    h3 {
+        font-size: 16px;
+        color: #EAA636;
+        font-weight: bold;
+    }
+    h1 {
+        font-weight: bold;
+        font-size: 2.3rem;
+    }
+    p {
+        color: gray;
+    }
+}
+
+// REPUTATION END
+
+.section {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    .box {
+        position: absolute;
+        width: 1272px;
+        height: 279px;
+        margin: auto;
+        bottom: 70px;
+        left: 110px;
+        .box1 {
+            position: relative;
+            background-image: url(https://www.designesia.com/themes/justica/images/services/1.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            margin:0 5px;
+            &:hover .box2 {
+             visibility: visible;
+             top: 0;
+            }
+            img {
+                width: 100%;
+            }
+            .box2 {
+                position: absolute;
+                top: 279px;
+                left: 0;
+                visibility: hidden;
+                width: 100%;
+                height: 100%;
+                padding: 25px 45px;
+                background-color: rgba(0, 0, 0, 0.74);
+                transition: 0.5s ease-in-out;
+                span {
+                    color: white;
+                    i {
+                        color: #EAA636;
+                        font-size: 2rem;
+                        margin-right: 15px;
+                    }
+                }
+                button {
+                    padding: 7px 20px;
+                    background-color: #EAA636;
+                    border: none;
+                    color: white;
+                }
+                p {
+                    margin-bottom: 20px;
+                    color: white;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    .box3 {
+        position: relative;
+        background-image: url(https://www.designesia.com/themes/justica/images/services/2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        margin:0 5px;
+        &:hover .box2 {
+         visibility: visible;
+         top: 0;
+        }
+        img {
+            width: 100%;
+        }
+        .box2 {
+            position: absolute;
+            top: 279px;
+            left: 0;
+            visibility: hidden;
+            width: 100%;
+            height: 100%;
+            padding: 25px 45px;
+            background-color: rgba(0, 0, 0, 0.74);
+            transition: 0.5s ease-in-out;
+            span {
+                color: white;
+                i {
+                    color: #EAA636;
+                    font-size: 2rem;
+                    margin-right: 15px;
+                }
+            }
+            button {
+                padding: 7px 20px;
+                background-color: #EAA636;
+                border: none;
+                color: white;
+            }
+            p {
+                margin-bottom: 20px;
+                color: white;
+                margin-top: 20px;
+            }
+        }
+    }
+    .box4 {
+        position: relative;
+        background-image: url(https://www.designesia.com/themes/justica/images/services/3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        margin:0 5px;
+        &:hover .box2 {
+         visibility: visible;
+         top: 0;
+        }
+        img {
+            width: 100%;
+        }
+        .box2 {
+            position: absolute;
+            top: 279px;
+            left: 0;
+            visibility: hidden;
+            width: 100%;
+            height: 100%;
+            padding: 25px 45px;
+            background-color: rgba(0, 0, 0, 0.74);
+            transition: 0.5s ease-in-out;
+            span {
+                color: white;
+                i {
+                    color: #EAA636;
+                    font-size: 2rem;
+                    margin-right: 15px;
+                }
+            }
+            button {
+                padding: 7px 20px;
+                background-color: #EAA636;
+                border: none;
+                color: white;
+            }
+            p {
+                margin-bottom: 20px;
+                color: white;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+
+// SECTION END
+
+
+.expierence {
+    width: 100%;
+    height: 584px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    .exp-img {
+       img {
+           width: 77%;
+           overflow: hidden;
+       }
+    }
+    .guide {
+        margin: 140px 0;
+        h4 {
+            color: #EAA636;
+            font-size: 17px;
+        }
+        h1 {
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+        button {
+            padding: 7px 19px;
+            border: none;
+            background-color: #EAA636;
+            color: white;
+            margin-bottom: 30px;
+            margin-right: 15px;
+        }
+        a {
+            text-decoration: none;
+            color: #EAA636;
+            margin-right: 15px;
+        }
+    }
+}
+
+// EXPIERENCE END
+
+.areas {
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+        font-weight: bold;
+        font-size: 2.2rem;
+        
+    }
+    .border-div {
+        height: 2px;
+        width: 8%;
+        background-color:#EAA636;
+        margin:20px auto;
+    }
+    p{
+        color: gray;
+    }
+    .spans {
+         display: flex;
+         flex-direction: column;
+        span {
+            color: black;
+            margin-bottom: 10px;
+            i {
+                font-size: 20px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .practice {
+        height: 250px;
+        text-align: center;
+    }
+}
+
+// AREAS END
+
+.facts {
+    background-image: url(https://www.designesia.com/themes/justica/images/background/2-bw.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 419px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .box1 {
+        width: 1040px;
+        height: 95px;
+        display: flex;
+        margin-bottom: 30px;
+        .we-did {
+            margin-right: 70px;
+            h4 {
+                font-size: 17px;
+                color: #EAA636;
+            }
+            h1 {
+                font-weight: bold;
+                font-size: 2.2rem;
+                color: white;
+            }
+        }
+    }
+    .box2 {
+        width: 1040px;
+        height: 95px;
+        display: flex;
+        .we-did {
+            margin-right: 15px;
+            h4 {
+                font-size: 17px;
+                color: #EAA636;
+            }
+            h1 {
+                font-weight: bold;
+                font-size: 2.2rem;
+                color: white;
+            }
+            p {
+                color: rgb(224, 224, 224);
+            }
+        }
+    }
+}
+
+
+// FACTS END
+
+
+.team {
+    width: 100%;
+    height: 70vh;
+    padding: 70px 0;
+     .t-center {
+         text-align: center;
+         margin-bottom: 45px;
+     }
+    .box {
+        margin: auto;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;      
+      img {
+        transition: 0.4s ease-in-out;
+        width: 100%;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        .box1 {
+            position: absolute;
+            top: 200px;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            .icon-div {
+                width: 30%;
+                margin: auto;
+                i {
+                    color: #EAA636;
+                }
+            }
+            h1 {
+                font-size: 1.5rem;
+                color: white;
+            }
+            p {
+                color: white;
+            }
+        }
+    }
+}
+
+// TEAM END
+
+.testimonial {
+    width: 100%;
+    height: 70vh;
+    background-image: url(https://www.designesia.com/themes/justica/images/background/3-bw.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 0;
+    .list {
+        width: 15%;
+        text-align: center;
+        margin: auto;
+        h1 {
+            color:white;
+            font-weight: bold;
+            font-size: 2.5rem;
+            border-bottom: 2px solid #EAA636;
+            margin-bottom: 30px;
+        }
+    }
+    .lawyer {
+        padding: 20px 50px;
+        border-radius: 6px;
+        background-color: white;
+        margin: auto;
+        i {
+            font-size: 2.5rem;
+            color:#EAA636 ;
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        p {
+            color: rgb(65, 61, 61);
+            margin-bottom: 15px;
+        }
+        span {
+            color: #EAA636;
+        }
+    }
+}
+
+// TESTIMONIAL END
+
+.footer-top {
+    padding: 70px;
+    width: 100%;
+    height: 375px;
+    background-color: #111111;
+    .justic {
+        display: flex;
+        flex-direction: column;
+        img {
+            margin-bottom: 20px;
+            width: 80%;
+        }
+        span {
+            color: white;
+            margin-bottom: 15px;
+            i {
+                color: #EAA636;
+                margin-right: 15px;
+            }
+        }
+    }
+    .practic {
+        display: flex;
+        flex-direction: column;
+        h1 {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #EAA636;
+            margin-bottom: 30px;
+        }
+        span {
+            color: white;
+            margin-bottom: 15px;
+            i {
+                color: #EAA636;
+                margin-right: 15px;
+            }
+        }
+    }
+    .newsletter {
+        h1 {
+            font-size: 1rem;
+            color: #EAA636;
+            margin-bottom: 25px;
+        }
+        p {
+            margin-bottom: 20px;
+            color: rgb(221, 221, 221);
+        }
+        input {
+            background-color: rgba(41, 41, 41, 0.411);
+            border: none;
+            padding-right: 30px;
+            padding-left: 20px;
+            border-radius: 3px;
+            font-size: 20px;
+            transition: 0.3s ease-in-out;
+            &:focus {
+                background-color: white;
+                color: black;
+                outline: none;
+            }
+        }
+        button {
+            padding:0 10px;
+            background-color: #EAA636;
+            color: white;
+            font-size: 20px;
+            border: none;
+            border-radius: 3px;
+            margin-bottom: 20px;
+        }
+    }
+}
